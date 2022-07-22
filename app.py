@@ -1,32 +1,4 @@
-app.py
-Who has access
-
-System properties
-Type
-Text
-Size
-7 KB
-Storage used
-7 KB
-Location
-Streamlit app on heroku
-Owner
-siddhardh selvam
-Modified
-Jul 2, 2022 by siddhardh selvam
-Opened
-8:48 PM by me
-Created
-Jul 3, 2022
-No description
-Viewers can download
 # -*- coding: utf-8 -*-
-"""
-Created on Sun May  8 21:01:15 2022
-
-@author: siddhardhan
-"""
-
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -45,7 +17,7 @@ parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Multiple Disease Prediction System',
+    selected = option_menu('v3 diease predictor',
                           
                           ['Diabetes Prediction',
                            'Heart Disease Prediction',
@@ -264,18 +236,3 @@ if (selected == "Parkinsons Prediction"):
           parkinsons_diagnosis = "The person does not have Parkinson's disease"
         
     st.success(parkinsons_diagnosis)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
